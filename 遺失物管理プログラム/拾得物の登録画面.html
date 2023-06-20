@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="拾得物の登録画面.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <title>拾得物登録画面</title>
+  </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="bi bi-search"></i> 拾得物管理システム</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">拾得物登録機能</a>
+              <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">拾得者（ユーザ）登録 <i class="bi bi-person"></i></a></i></li>
+                <li><a class="dropdown-item" href="拾得物の登録画面.html">拾得物登録 <i class="bi bi-file-earmark-arrow-up"></i></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">拾得物検索機能</a>
+              <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="検索画面.html">拾得物検索 <i class="bi bi-search"></i></a></li>
+                <li><a class="dropdown-item" href="#">遺失物捜索依頼 <i class="bi bi-file-earmark-check"></i></a></li>
+                <li><a class="dropdown-item" href="#">遺失物捜索一覧 <i class="bi bi-table"></i></a></li>
+              </ul>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <h2>拾得物登録</h2>
+    <h4>
+      <form action="xxx.php" method="post"><label>拾った日付:<input type="date" name="date"></label><input type="submit" value="送信"></form>
+      <k>種類</k>
+      <p>  
+        <label><input type="radio" name="shurui" value="1">バッグ</label>
+        <label><input type="radio" name="shurui" value="2">鍵</label>
+        <label><input type="radio" name="shurui" value="3">コード類</label>
+        <label><input type="radio" name="shurui" value="4">財布</label>
+        <label><input type="radio" name="shurui" value="5">文房具</label>
+        <label><input type="radio" name="shurui" value="6">電子機器</label>
+        <label><input type="radio" name="shurui" value="7">その他</label>
+      </p>
+        <a>拾得場所：
+          <label><input type="checkbox" name="basho" value="1">１号館</label>
+          <label><input type="checkbox" name="basho" value="2">２号館</label>
+          <label><input type="checkbox" name="basho" value="3">３号館</label>
+          <label><input type="checkbox" name="basho" value="4">４号館</label>
+          <label><input type="checkbox" name="basho" value="5">５号館</label>
+          <label><input type="checkbox" name="basho" value="6">６号館</label>
+          <label><input type="checkbox" name="basho" value="7">７号館</label>
+          <label><input type="checkbox" name="basho" value="8">体育館</label>
+          <label><input type="checkbox" name="basho" value="9">バス停</label>
+          <label><input type="checkbox" name="basho" value="10">食堂</label>
+          <label><input type="checkbox" name="basho" value="11">厚生棟</label>
+          <label><input type="checkbox" name="basho" value="12">事務棟</label>
+          <label><input type="checkbox" name="basho" value="13">図書館</label>
+          <label><input type="checkbox" name="basho" value="14">内庭</label>
+          <label><input type="checkbox" name="basho" value="15">グラウンド等</label>
+          <label><input type="checkbox" name="basho" value="16">その他</label>
+        </a>
+        <b><label>画像：<input type="file" name="gazou"></label></b>
+        <c>
+        <input type="submit" value="登録">
+        <input type="reset" value="リセット">
+        </c>  
+    </h4>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
